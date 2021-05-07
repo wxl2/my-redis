@@ -41,6 +41,9 @@
 *.su
 *.idb
 *.pdb
+CMakeCache.txt
+cmake_install.cmake
+Makefile
 
 # Kernel Module Compile Results
 *.mod*
@@ -50,3 +53,11 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+#ffolder
+CMakeFiles/
+bin/
+test/CMakeFiles/
+test/bin/
+base/CMakeFiles/
+base/bin/
