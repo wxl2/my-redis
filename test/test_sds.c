@@ -1,5 +1,5 @@
 #include "base/sds.h"
-#include "base/testhelp.h"
+#include "testhelp.h"
 #include <stdio.h>
 #include "limits.h"
 

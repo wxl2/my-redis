@@ -1,9 +1,8 @@
 set(base_SRCS
 	sds.c
-	zmalloc.c
 	adlist.c
-	endianconv.c)
+	dict.c)
 
-
+add_definitions(-D DICT_BENCHMARK_MAIN)
 add_library(base ${base_SRCS})
-target_link_libraries(base jemalloc pthread)
+target_link_libraries(base utils)

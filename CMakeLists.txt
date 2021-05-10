@@ -5,9 +5,10 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ./bin)
 link_directories(/usr/local/lib)
 include_directories(/usr/local/include)
 aux_source_directory(. DIRSRCS)
-include_directories(./ ./base ./test)
+include_directories(./ ./base ./test ./utils)
 
 add_subdirectory(base)
+add_subdirectory(utils)
 add_subdirectory(test)
 
 add_executable(redis main.c)
